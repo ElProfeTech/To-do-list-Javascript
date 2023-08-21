@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    max-width: 700px;
+    background-image: linear-gradient(180deg, #f5896e 0, #eb0909 50%, #a50505 100%);
+    margin: 50px auto;
+    border-radius: 30px;
+}
+
+.main-container h1{
+    text-align: center;
+    padding: 40px 0;
+    color: white;
+    text-transform: capitalize;
+    font-size: 50px;
+}
+
+.add-task-container{
+    display:flex;
+    justify-content: center;
+    *background-color: red;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.add-task-container input[type="text"]{
+    font-size: 25px;
+    padding: 7px 20px;
+    border-radius: 10px;
+    border: outset;
+    width: 400px;
+    max-width: 400px;
+    height: 70px;
+   
+}
+
+.add-task-container input[type="button"]{
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: outset;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+   
+}
+
+.add-task-container input[type="button"]:hover{
+    background-color: rgb(54, 49, 49);
+    color: white;
+   
+}
+
+.task-container{
+    *background-color: red;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    border-radius: 30px;
+}
+
+
+.list-task{
+    list-style: none;
+}
+
+.task{
+    background-color: brown;
+    max-width: 500px;
+    width: 500px;
+   display: flex; 
+   padding: 20px 20px;
+   margin: 20px;
+   border-radius: 15px;
+   border: white solid 1px;
+   align-items: center;
+   position: relative;
+}
+
+
+
+.task .circle{
+    width: 25px;
+    height: 25px;
+    background-color: rgba(0, 0,0, 0.5);
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+
+ }
+
+
+ .circle.btnTaskactive{
+    background-color: green;
+
+ }
+
+.task p{
+   color: white;
+   font-size: 25px; 
+}
+
+
+
+
+.imagetrash{
+    width: 30px;
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+
+}
+
+.imagetrash img{
+    width: 100%;
+    filter: invert(2);
+
+    
+}
+
+
+.imagetrash img:hover{
+    transform: scale(1.2);
+ 
+}
+
+@media (max-width:500px){
+
+    .task{
+       width: 450px;
+    }
+    .main-container{
+       
+        margin: 30px auto;
+        
+    }
+
+
+}
+
+
+@media (max-width:425px){
+
+
+
+    .task{
+       width: 400px;
+    }
+
+    .task p{
+        color: white;
+        font-size: 20px; 
+     }
+
+
+}
+
+@media (max-width:375px){
+
+
+
+    .task{
+       width: 350px;
+    }
+    .task p{
+        color: white;
+        font-size: 18px; 
+     }
+
+     .add-task-container input[type="text"]{
+        font-size: 25px;
+        padding: 7px 20px;
+        border-radius: 10px;
+        border: outset;
+        width: 350px;
+        max-width: 400px;
+        height: 60px;
+       
+    }
+
+}
+
+@media (max-width:320px){
+
+    .add-task-container input[type="text"]{
+        font-size: 25px;
+        padding: 7px 20px;
+        border-radius: 10px;
+        border: outset;
+        width: 300px;
+        max-width: 400px;
+        height: 60px;
+       
+    }
+
+    .task{
+       width: 300px;
+    }
+
+    .task p{
+        color: white;
+        font-size: 20px; 
+     }
+
+
+}
