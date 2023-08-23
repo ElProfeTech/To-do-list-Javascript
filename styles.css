@@ -146,7 +146,9 @@
 
 @media (max-width:425px){
 
-
+.main-container h1{
+    font-size:40px
+}
 
     .task{
        width: 400px;
@@ -154,7 +156,7 @@
 
     .task p{
         color: white;
-        font-size: 20px; 
+        font-size: 18px; 
      }
 
 
@@ -174,12 +176,12 @@
 
      .add-task-container input[type="text"]{
         font-size: 25px;
-        padding: 7px 20px;
+        padding: 5px 20px;
         border-radius: 10px;
         border: outset;
-        width: 350px;
-        max-width: 400px;
-        height: 60px;
+        width: 340px;
+        max-width: 340px;
+        height: 50px;
        
     }
 
@@ -189,12 +191,12 @@
 
     .add-task-container input[type="text"]{
         font-size: 25px;
-        padding: 7px 20px;
+        padding: 5px 20px;
         border-radius: 10px;
         border: outset;
         width: 300px;
-        max-width: 400px;
-        height: 60px;
+        max-width: 300px;
+        height: 50px;
        
     }
 
@@ -204,7 +206,7 @@
 
     .task p{
         color: white;
-        font-size: 20px; 
+        font-size: 18px; 
      }
 
 
